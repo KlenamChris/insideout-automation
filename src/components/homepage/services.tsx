@@ -12,9 +12,7 @@ const services = [
     title: "Upgrade Your Home",
     description:
       "Scallable, renter-friendly kits that stay online when the power goes off. Security, energy and comfort without the landlord drama.",
-    buttons: [
-      { text: "Explore Smart Kits", href: "/smart-homes", variant: "link" },
-    ],
+    buttons: [{ text: "Explore Smart Kits", href: "#", variant: "link" }],
     image: "/images/smart-homes/smart-home2.jpeg",
   },
   {
@@ -27,7 +25,7 @@ const services = [
     buttons: [
       {
         text: "View Business Solutions",
-        href: "/3d-services",
+        href: "#",
         variant: "outline",
       },
     ],
@@ -111,7 +109,10 @@ const Services = () => {
             6 Ready
           </div>
           <div className="flex items-center gap-2">
-            <span className="font-bold text-brand-evergreen"><PlugZap2 /></span> Shield
+            <span className="font-bold text-brand-evergreen">
+              <PlugZap2 />
+            </span>{" "}
+            Shield
           </div>
           <div className="flex items-center gap-2">
             <span className="font-bold text-brand-evergreen">

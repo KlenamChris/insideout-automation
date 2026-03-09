@@ -1,6 +1,5 @@
 "use client";
 
-
 import { motion } from "framer-motion";
 import Link from "next/link";
 
@@ -63,12 +62,12 @@ const Hero = () => {
                   transition={{ delay: 0.7, duration: 0.8 }}
                   className="flex flex-col sm:flex-row justify-center gap-4 pt-4"
                 >
-                  <Link href="/programs">
+                  <Link href="#">
                     <button className="w-full sm:w-auto rounded-md text-white bg-brand-evergreen px-8 py-3.5 text-base font-medium shadow-lg hover:bg-brand-spring transition-all duration-300">
                       Explore Smart Living
                     </button>
                   </Link>
-                  <Link href="/about">
+                  <Link href="#">
                     <button className="w-full sm:w-auto rounded-md bg-white/30 backdrop-blur-md text-white px-8 py-3.5 text-base font-medium border border-white/30 hover:bg-black/20 transition-all duration-300">
                       See 3D Services
                     </button>

@@ -11,15 +11,15 @@ import Image from "next/image";
 export function Footer() {
   const navigation = {
     programs: [
-      { name: "Smart Home Kits", href: "/smart-homes" },
-      { name: "Energy & Backup Hubs", href: "/smart-home#energy" },
-      { name: "Professional 3D Tours", href: "/" },
+      { name: "Smart Home Kits", href: "#" },
+      { name: "Energy & Backup Hubs", href: "#" },
+      { name: "Professional 3D Tours", href: "#" },
     ],
     explore: [
       { name: "Home", href: "/" },
-      { name: "Smart Homes", href: "/smart-homes" },
-      { name: "3D Tours", href: "/3d-tour" },
-      { name: "About", href: "/about" },
+      { name: "Smart Homes", href: "#" },
+      { name: "3D Tours", href: "#" },
+      { name: "About", href: "#" },
       { name: "Contact", href: "#contact" },
     ],
   };
@@ -61,13 +61,13 @@ export function Footer() {
             </p>
             <div className="flex flex-wrap items-center gap-3 pt-2">
               <Link
-                href="/3d-services"
+                href="#"
                 className="inline-flex items-center px-6 py-3.5 bg-brand-bud text-gray-800 font-medium rounded-xl hover:bg-brand-bud/40 active:scale-[0.98] transition-all duration-200 shadow-lg shadow-brand-spring-700/25"
               >
                 Explore
               </Link>
               <Link
-                href="/contact"
+                href="#"
                 className="inline-flex items-center px-6 py-3.5 bg-white/90 border border-slate-200 text-gray-800 font-medium rounded-xl hover:bg-white/75 hover:border-gray-200 hover:text-gray-800 transition-all duration-200"
               >
                 Get in touch
