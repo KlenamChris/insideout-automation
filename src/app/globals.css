@@ -1,26 +1,122 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+@plugin "@tailwindcss/typography";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  
+  /* Custom Shadows */
+  --shadow-float: 0 20px 40px -10px rgba(17, 74, 42, 0.08);
+  --shadow-float-strong: 0 30px 60px -15px rgba(35, 124, 74, 0.15);
+  
+  /* Border Radius */
+  --radius-tech: 12px;
+  --color-ring: var(--ring);
+  --color-border: var(--border);
+  
+  
+  --color-background: #ffffff;
+  --color-foreground: #000000;
+  --color-brand-spring: #237c4a;
+  --color-brand-bud: #b6e14f;
+  --color-brand-evergreen: #114a2a;
+  --color-surface: #f8f9fa;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+:root {
+  --radius: 0.625rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
   }
 }
 
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-manrope), serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+h1 {
+  font-family: var(--font-manrope), serif;
+  font-weight: 500;
+  font-style: normal;
+  font-optical-sizing: auto;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+@keyframes floatitem {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.animate-float-item {
+  animation: floatitem 5s ease-in-out infinite;
+}
+
+@keyframes rotateitem {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(8deg);
+  }
+}
+
+.animate-rotate-item {
+  animation: rotateitem 5s ease-in-out infinite;
 }
