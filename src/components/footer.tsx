@@ -20,7 +20,7 @@ export function Footer() {
       { name: "Smart Homes", href: "#" },
       { name: "3D Tours", href: "#" },
       { name: "About", href: "/about" },
-      { name: "Contact", href: "#contact" },
+      { name: "Contact", href: "/contact" },
     ],
   };
 
@@ -67,7 +67,7 @@ export function Footer() {
                 Explore
               </Link>
               <Link
-                href="#"
+                href="/contact"
                 className="inline-flex items-center px-6 py-3.5 bg-white/90 border border-slate-200 text-gray-800 font-medium rounded-xl hover:bg-white/75 hover:border-gray-200 hover:text-gray-800 transition-all duration-200"
               >
                 Get in touch

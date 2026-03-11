@@ -11,7 +11,7 @@ const NAV_LINKS = [
   { href: "#", label: "Smart Living" },
   { href: "#", label: "3D Tour" },
   { href: "/about", label: "About" },
-  { href: "#contact", label: "Contact" },
+  { href: "/contact", label: "Contact" },
   //    { href: "/news", label: "News & Blog" },
 ];
 
