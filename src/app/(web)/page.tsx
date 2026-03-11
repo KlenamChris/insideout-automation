@@ -9,6 +9,7 @@ import Services from "@/components/homepage/services";
 // import CTA from "@/components/homepage/cta";
 import Contact from "@/components/homepage/contact";
 import { Metadata } from "next";
+import WhatWeDo from "@/components/homepage/what-we-do";
 
 export const metadata: Metadata = {
   title: "Insideout Automation - Smart Living & Property Tech",
@@ -29,6 +30,7 @@ export default function Home() {
       {/* <Partners /> */}
       <Services />
       <Programs />
+      <WhatWeDo />
       {/* <Testimonials /> */}
       {/* <Impact /> */}
       {/* <Gallery /> */}

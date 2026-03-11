@@ -19,7 +19,7 @@ export function Footer() {
       { name: "Home", href: "/" },
       { name: "Smart Homes", href: "#" },
       { name: "3D Tours", href: "#" },
-      { name: "About", href: "#" },
+      { name: "About", href: "/about" },
       { name: "Contact", href: "#contact" },
     ],
   };

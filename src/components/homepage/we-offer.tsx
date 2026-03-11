@@ -16,7 +16,7 @@ const programs = [
    {
       id: "two",
       title: "Flexibility",
-      description: "Move-in ready. Move-out esay. 100% Renter Friendly.",
+      description: "Move-in ready. Move-out easy. 100% Renter Friendly.",
       image: "/images/we-offer-1.jpg",
       large: true,
    },

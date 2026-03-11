@@ -10,7 +10,7 @@ const NAV_LINKS = [
   { href: "/", label: "Home" },
   { href: "#", label: "Smart Living" },
   { href: "#", label: "3D Tour" },
-  { href: "#", label: "About" },
+  { href: "/about", label: "About" },
   { href: "#contact", label: "Contact" },
   //    { href: "/news", label: "News & Blog" },
 ];
