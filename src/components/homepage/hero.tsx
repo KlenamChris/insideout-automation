@@ -24,8 +24,9 @@ const Hero = () => {
           <div
             className="absolute inset-0 transition-transform duration-1000 hover:scale-105"
             aria-hidden
+            // Only if I have to insert an image there....
             style={{
-              backgroundImage: "url('/hero.png')",
+              backgroundImage: "url('/images/')", 
               backgroundSize: "cover",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
