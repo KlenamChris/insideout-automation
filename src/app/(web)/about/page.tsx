@@ -99,7 +99,7 @@ const AboutClient = () => {
               <div className="relative aspect-4/3 rounded-2xl overflow-hidden shadow-2xl border border-white/50">
                 <Image
                   src="/images/about5.jpg"
-                  alt="pexel-image"
+                  alt="pexels-image"
                   fill
                   className="object-cover transform hover:scale-105 transition-transform duration-700"
                 />
@@ -201,7 +201,7 @@ const AboutClient = () => {
               <div className="relative aspect-4/3 rounded-2xl overflow-hidden shadow-2xl border border-white/50">
                 <Image
                   src="/images/about4.jpg"
-                  alt="Students engaging in robotics"
+                  alt="pexels-image"
                   fill
                   className="object-cover transform hover:scale-105 transition-transform duration-700"
                 />
@@ -228,7 +228,7 @@ const AboutClient = () => {
               <div className="relative aspect-4/3 rounded-2xl overflow-hidden shadow-2xl border border-white/50">
                 <Image
                   src="/images/about3.jpg"
-                  alt="Pexel image"
+                  alt="Pexels image"
                   fill
                   className="object-cover transform hover:scale-105 transition-transform duration-700"
                 />
