@@ -258,7 +258,7 @@ const AboutClient = () => {
                   We combine global technology with local insight to create
                   smart automation systems that truly work for Ghanaian homes
                   and urban environments. From smart security and lighting to
-                  integrated property systems, we design solutions that make
+                  integrated property systems, we design solutions that makes
                   homes safer, more efficient and easier to manage.
                 </p>
                 <p>
