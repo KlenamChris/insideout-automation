@@ -48,7 +48,7 @@ export function Footer() {
 
       <div className="container relative mx-auto px-4 sm:px-6">
         {/* Main content grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-6 mb-16">
           {/* CTA block */}
           <div className="lg:col-span-5 xl:col-span-6 space-y-6">
             <p className="text-4xl sm:text-5xl md:text-6xl font-semibold text-white tracking-tight leading-[1.1]">
@@ -98,7 +98,7 @@ export function Footer() {
               <p className="text-xs font-semibold uppercase tracking-wider text-brand-bud mb-4">
                 Company
               </p>
-              <ul className="flex flex-col gap-3">
+              <ul className="flex flex-col gap-1">
                 {navigation.explore.map((item) => (
                   <li key={item.name}>
                     <Link
@@ -111,17 +111,18 @@ export function Footer() {
                 ))}
               </ul>
             </div>
-            <div>
+            {/* <div>
               <p className="text-xs font-semibold uppercase tracking-wider text-brand-bud mb-4">
                 Contact
               </p>
-              <ul className="flex flex-col gap-3">
+              <ul className="flex flex-col gap-1">
                 <li>
                   <Link
                     href={"mailto:info@insideoutautomation.com"}
-                    className="text-white hover:text-brand-bud transition-colors duration-200"
+                    className="text-white hover:text-brand-bud transition-colors flex items-center duration-200"
                   >
-                    info@insideoutautomation.com
+                    <Mail className="w-4 h-4 mr-1.5"/>
+                    Email us
                   </Link>
                 </li>
                 <li>
@@ -129,7 +130,7 @@ export function Footer() {
                     href={"tel:+23357394405"}
                     className="text-white hover:text-brand-bud transition-colors duration-200"
                   >
-                    +233 57 393 4405
+                    (+233) 57 393 4405
                   </Link>
                 </li>
                 <li>
@@ -142,7 +143,7 @@ export function Footer() {
                   </span>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
 
