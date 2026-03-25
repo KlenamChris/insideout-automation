@@ -1,6 +1,6 @@
 "use client";
 
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 const Contact = () => {
@@ -29,26 +29,33 @@ const Contact = () => {
   ];
 
   return (
-    <section className="py-20 bg-white" id="contact">
-      <div className="container mx-auto px-4 sm:px-6">
-        {/* Header */}
-        <div className="mb-16">
-          <span className="block text-sm font-semibold text-black mb-4 tracking-tight">
-            CONNECT
-          </span>
-          <h2 className="text-4xl md:text-5xl font-medium text-slate-900 mb-6 tracking-tight">
-            Reach out
-          </h2>
-          <p className="text-lg text-slate-600 font-light">
-            We&apos;re here to answer your questions on how to plan a smart home
-            and 3D equipment rental/sales
-          </p>
+    <section className="py-10 bg-white" id="contact">
+      <div className="container mx-auto px-1 sm:px-6">
+        <div className="bg-slate-100 text-black flex p-2 py-4 justify-between rounded-2xl">
+          <div className="flex items-center mx-1">
+            <p>Have a question or need help choosing the right solution? </p>
+          </div>
+          <div className="flex items-center font-medium bg-brand-evergreen rounded-3xl p-1 hover:shadow-xl transition-all duration-100">
+            <button className="flex p-0.5">
+              <span className="bg-brand-bud rounded-3xl p-1 ">
+                <ArrowRight className="text-white" />
+              </span>
+              <p className="flex items-center ml-2 p-1 text-white">Contact us</p>
+            </button>
+          </div>
         </div>
 
+        {/* <div className=" flex text-slate-600 bg-slate-300 rounded-3xl p-1 mb-8">
+          <button className="bg-brand-spring rounded-4xl p-1">
+            <ArrowRight className="text-white size-5"/>
+          </button>
+          <p className="flex items-center pl-1 font-bold">Contact Us</p>
+        </div> */}
+
         {/* Contact Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
+        {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
           {contactMethods.map((method, index) => (
-            <div key={index} className="flex flex-col items-start">
+            <div key={index} className="flex flex-col bg-slate-50 p-5 rounded-2xl items-start">
               <div className="mb-6 text-slate-900">{method.icon}</div>
               <h3 className="text-2xl font-medium text-slate-900 mb-4 tracking-tight">
                 {method.title}
@@ -64,7 +71,7 @@ const Contact = () => {
               </Link>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );
