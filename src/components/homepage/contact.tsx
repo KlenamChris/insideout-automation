@@ -1,49 +1,62 @@
 "use client";
 
-import { Mail, Phone, MapPin, ArrowRight } from "lucide-react";
-import Link from "next/link";
+import { motion } from "framer-motion";
+import {
+  // Mail,
+  //  Phone,
+  //  MapPin,
+  ArrowRight,
+} from "lucide-react";
+// import Link from "next/link";
 
 const Contact = () => {
-  const contactMethods = [
-    {
-      icon: <Mail className="w-8 h-8" />,
-      title: "Email",
-      description: "Send us a message anytime during business hours",
-      action: "info@insideoutautomation.com",
-      href: "mailto:info@insideoutautomation.com",
-    },
-    {
-      icon: <Phone className="w-8 h-8" />,
-      title: "Phone",
-      description: "Call us to discuss which service fits your needs",
-      action: "+233 57 393 4405",
-      href: "tel:+233753934405",
-    },
-    {
-      icon: <MapPin className="w-8 h-8" />,
-      title: "Location",
-      description: "You can find us at",
-      action: "XYZ Street Road Accra, Ghana",
-      href: "https://maps.google.com",
-    },
-  ];
+  // const contactMethods = [
+  //   {
+  //     icon: <Mail className="w-8 h-8" />,
+  //     title: "Email",
+  //     description: "Send us a message anytime during business hours",
+  //     action: "info@insideoutautomation.com",
+  //     href: "mailto:info@insideoutautomation.com",
+  //   },
+  //   {
+  //     icon: <Phone className="w-8 h-8" />,
+  //     title: "Phone",
+  //     description: "Call us to discuss which service fits your needs",
+  //     action: "+233 57 393 4405",
+  //     href: "tel:+233753934405",
+  //   },
+  //   {
+  //     icon: <MapPin className="w-8 h-8" />,
+  //     title: "Location",
+  //     description: "You can find us at",
+  //     action: "XYZ Street Road Accra, Ghana",
+  //     href: "https://maps.google.com",
+  //   },
+  // ];
 
   return (
     <section className="py-10 bg-white" id="contact">
       <div className="container mx-auto px-1 sm:px-6">
-        <div className="bg-slate-100 text-black flex p-2 py-4 justify-between rounded-2xl">
-          <div className="flex items-center mx-1">
-            <p>Have a question or need help choosing the right solution? </p>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+        >
+          <div className="bg-slate-100 text-black flex p-2 py-4 justify-between rounded-2xl mx-3 sm:mx-0 md:mx-0">
+            <div className="flex items-center mx-1">
+              <p>Have a question or need help choosing the right solution? </p>
+            </div>
+            <div className="flex items-center font-medium bg-brand-evergreen rounded-3xl p-1 hover:shadow-xl transition-all duration-100">
+              <button className="flex p-1 w-35">
+                <span className="bg-brand-bud rounded-3xl p-1 ">
+                  <ArrowRight className="text-white md:size-5" />
+                </span>
+                <p className="flex items-center ml-1 text-white">Contact us</p>
+              </button>
+            </div>
           </div>
-          <div className="flex items-center font-medium bg-brand-evergreen rounded-3xl p-1 hover:shadow-xl transition-all duration-100">
-            <button className="flex p-0.5">
-              <span className="bg-brand-bud rounded-3xl p-1 ">
-                <ArrowRight className="text-white" />
-              </span>
-              <p className="flex items-center ml-2 p-1 text-white">Contact us</p>
-            </button>
-          </div>
-        </div>
+        </motion.div>
 
         {/* <div className=" flex text-slate-600 bg-slate-300 rounded-3xl p-1 mb-8">
           <button className="bg-brand-spring rounded-4xl p-1">
