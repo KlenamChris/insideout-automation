@@ -41,7 +41,7 @@ const Services = () => {
         {services.map((service, index) => (
           <div key={service.number} style={{ backgroundImage: `url(${service.image})`}} className="flex group rounded-2xl bg-cover shadow-sm flex-col justify-end items-end  h-96 p-5 hover:scale-105 hover:shadow-xl transition-all. duration-300">
             {service.buttons.map((btn, i) => (
-            <button key={btn.href} className="absolute text-slate-50 rounded-3xl backdrop-blur-sm text-xs shadow-sm p-2 group-hover:scale-105">{btn.text}</button>
+            <button key={btn.href} className="absolute text-slate-50 border rounded-3xl backdrop-blur-sm text-xs shadow-sm p-2 group-hover:scale-105">{btn.text}</button>
               
             ))}
           </div>
